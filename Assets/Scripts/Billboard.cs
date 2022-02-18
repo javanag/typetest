@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Used to make sure that the canvas under the TypingManager is always
+// turned towards the main camera.
 public class Billboard : MonoBehaviour
 {
 	public Transform camTransform;

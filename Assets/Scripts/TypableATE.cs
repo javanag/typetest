@@ -24,6 +24,8 @@ public class TypableATE : TypingEvent
     }
 
     public override void Fail() {
-
+        typingManager.GetComponent<TypingManager>().SetTypingEvent(
+            nextTypingEventObject.GetComponent<TypingEvent>()
+        );
     }
 }

@@ -7,8 +7,9 @@ public abstract class TypingEvent : MonoBehaviour
     // The text that will be shown when the typing event occurs.
     public string typingPrompt;
     
-    // Determines whether the prompt will be timed or untimed.
-    public bool timed = false;
+    // Determines the time (ms) for the player to complete the prompt.
+    // If 0, will act as untimed, no timer indication will be shown.
+    public uint eventTime = 0;
 
     // The object whose position transform will be used to spawn the text.
     public GameObject positionObject;

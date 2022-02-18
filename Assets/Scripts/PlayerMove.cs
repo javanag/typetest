@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     public GameObject typingEventCube;
 
     private bool isMoving;
-    private float speed = 0.5f;
+    private float speed = 1f;
     // Start is called before the first frame update
     void Start()
     {
